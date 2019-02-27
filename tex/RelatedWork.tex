@@ -1,0 +1,13 @@
+\vspace{-2pt}
+\section{Related Work}
+\label{sec:related}
+
+Due to the vast and complex design space, heuristic methods are widely used in DSEs.
+The heuristics methods are comprised of an algorithm to explore design space and a fast evaluation/estimation to judge the performance of chosen platforms.
+Some examples are genetic algorithms (GA)~\cite{quan2014towards}, simulated annealing~\cite{liang2013hardware}, tabu search~\cite{wu2013efficient}, and greedy algorithms~\cite{tang2015hardware}.
+These existing DSEs focus on allocating a platform for a single application, because there is no existing platform evaluation that considers many applications. 
+
+Some ideas about how to consider many applications can be extracted from platform-based computing which uses statistical information to design the platform and application-specific mappings~\cite{graf2014multi, gladigau2010system}. However, more specialization for a wider set of applications is needed. Reconfigurable computing, such as \cite{wildermann2011operational}, aims to support multiple applications one at a time, however, it relies on functional and structural similarities across reconfiguration cycles.
+
+Some promising architectures for many-application platforms have been proposed (e.g., \cite{tabkhi2014function, nowatzki2017domain}), but many-application DSE and platform evaluation have not yet been tackled. 
+An early example of a many-application DSE is Domain Score Selection (DSS)~\cite{zhang2018ds} which proposes a greedy approach for identifying similar function kernels for hardware acceleration, but it uses an unfair platform evaluation, comparing average throughput improvement, wherein a small number of high-performance applications dominate the evaluation. 
